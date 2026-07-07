@@ -1,0 +1,41 @@
+/* ─── InStock theme — teal palette from the Behance case study ─────── */
+:root {
+  --p-green-deep: #1d6f68;
+  --p-green: #3cb4ab;
+  --p-orange: #f2b53a;
+  --p-bg: #fafcfb;
+}
+
+.phero__wordmark {
+  font-family: var(--font);
+  font-size: 15px;
+  font-weight: 700;
+  letter-spacing: 0.01em;
+  text-transform: none;
+  color: #fff;
+  background: var(--p-green);
+  border-radius: 9px;
+  padding: 7px 12px;
+}
+
+/* case study figures */
+.pfigure {
+  margin: 32px 0 8px;
+}
+.pfigure img {
+  display: block;
+  width: 100%;
+  border-radius: 14px;
+  border: 1px solid var(--p-border);
+}
+.pfigure figcaption {
+  font-family: var(--font-mono);
+  font-size: 11px;
+  letter-spacing: 0.04em;
+  color: var(--p-dim);
+  margin-top: 12px;
+  text-align: center;
+}
+
+.psection a { color: var(--p-green); }
+.psection a:hover { text-decoration: underline; }

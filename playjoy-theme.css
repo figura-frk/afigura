@@ -1,0 +1,106 @@
+/* ─── PlayJoy theme — dark purple palette from playjoystudios.com ──── */
+:root {
+  --p-bg: #12001d;
+  --p-surface: rgba(255, 255, 255, 0.05);
+  --p-text: #ffffff;
+  --p-muted: #a094c9;
+  --p-dim: #6f63a0;
+  --p-green-deep: #3d0b5c;
+  --p-green: #a100ff;
+  --p-orange: #f7af32;
+  --p-border: rgba(255, 255, 255, 0.12);
+  --font: 'Montserrat', sans-serif;
+}
+
+body {
+  background:
+    radial-gradient(ellipse 80% 60% at 70% -10%, rgba(88, 21, 134, 0.55), transparent 65%),
+    radial-gradient(ellipse 60% 50% at 0% 40%, rgba(27, 2, 132, 0.5), transparent 60%),
+    var(--p-bg);
+}
+
+.pnav.scrolled {
+  background: rgba(18, 0, 29, 0.85);
+}
+
+.pnav__contact:hover {
+  background: var(--p-green);
+  border-color: var(--p-green);
+}
+
+.phero__title-sub { color: var(--p-green); }
+
+/* hero split with mascot */
+.phero__grid {
+  display: grid;
+  grid-template-columns: 1.4fr 1fr;
+  gap: 48px;
+  align-items: center;
+}
+.phero__art {
+  width: 100%;
+  max-width: 420px;
+  justify-self: center;
+  filter: drop-shadow(0 30px 60px rgba(161, 0, 255, 0.25));
+}
+.phero__logo--wide {
+  height: 30px;
+  width: auto;
+  border-radius: 0;
+}
+.phero__facts a { color: var(--p-green); }
+.phero__facts a:hover { text-decoration: underline; }
+
+.pstat { background: var(--p-surface); }
+.pstat strong { color: var(--p-green); }
+
+blockquote { background: var(--p-surface); border-left-color: var(--p-green); }
+
+/* game covers grid */
+.pgames {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
+  margin-top: 32px;
+}
+.pgame { margin: 0; }
+.pgame img {
+  display: block;
+  width: 100%;
+  border-radius: 14px;
+  border: 1px solid var(--p-border);
+  transition: transform 0.35s cubic-bezier(0.16,1,0.3,1);
+}
+.pgame:hover img { transform: translateY(-6px); }
+.pgame figcaption {
+  font-family: var(--font-mono);
+  font-size: 10px;
+  letter-spacing: 0.04em;
+  color: var(--p-dim);
+  margin-top: 10px;
+  text-align: center;
+  line-height: 1.5;
+}
+
+.pawards {
+  display: flex;
+  gap: 24px;
+  justify-content: center;
+  margin-top: 36px;
+}
+.pawards img { height: 84px; width: auto; }
+
+.pswatch--light span { color: rgba(255,255,255,0.85); }
+
+.pfooter-nav__cta { background: var(--p-green); }
+.pfooter-nav__cta:hover { background: #b64dff; }
+
+.psection a { color: var(--p-green); }
+.psection a:hover { text-decoration: underline; }
+
+@media (max-width: 768px) {
+  .phero__grid { grid-template-columns: 1fr; }
+  .phero__art { max-width: 260px; order: -1; }
+  .pgames { grid-template-columns: 1fr 1fr; }
+  .pawards img { height: 64px; }
+}

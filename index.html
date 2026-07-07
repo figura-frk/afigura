@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Anna Figura — Product Designer</title>
+  <link rel="icon" type="image/x-icon" href="assets/favicon/favicon.ico" />
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png" />
+  <link rel="manifest" href="assets/favicon/site.webmanifest" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Space+Mono:ital@0;1&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav class="nav" id="nav">
+    <div class="nav__inner">
+      <a href="#" class="nav__logo">
+        <img src="assets/logo.svg" alt="Anna Figura" class="nav__logo-img" />
+      </a>
+      <ul class="nav__links">
+        <li><a href="#works" class="nav__link">Works</a></li>
+        <li><a href="#blog" class="nav__link">Writing</a></li>
+        <li><a href="#contact" class="nav__link">Contact</a></li>
+      </ul>
+      <button class="nav__menu-toggle" id="menuToggle" aria-label="Toggle menu">
+        <span></span><span></span>
+      </button>
+    </div>
+    <div class="nav__mobile" id="mobileMenu">
+      <a href="#works" class="nav__mobile-link">Works</a>
+      <a href="#blog" class="nav__mobile-link">Writing</a>
+      <a href="#contact" class="nav__mobile-link">Contact</a>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <section class="hero" id="home">
+    <div class="hero__inner">
+      <div class="hero__ticker reveal-up">
+        <div class="hero__ticker-track">
+          <span class="hero__ticker-item">6+ years of experience</span>
+          <span class="hero__ticker-sep">·</span>
+          <span class="hero__ticker-item">design system expertise</span>
+          <span class="hero__ticker-sep">·</span>
+          <span class="hero__ticker-item">available for collaborations</span>
+          <span class="hero__ticker-sep">·</span>
+          <span class="hero__ticker-item">design speaker for events</span>
+          <span class="hero__ticker-sep">·</span>
+          <span class="hero__ticker-item">ai-enthusiast</span>
+          <span class="hero__ticker-sep">·</span>
+          <!-- duplicate for seamless loop -->
+          <span class="hero__ticker-item">6+ years of experience</span>
+          <span class="hero__ticker-sep">·</span>
+          <span class="hero__ticker-item">design system expertise</span>
+          <span class="hero__ticker-sep">·</span>
+          <span class="hero__ticker-item">available for collaborations</span>
+          <span class="hero__ticker-sep">·</span>
+          <span class="hero__ticker-item">design speaker for events</span>
+          <span class="hero__ticker-sep">·</span>
+          <span class="hero__ticker-item">ai-enthusiast</span>
+          <span class="hero__ticker-sep">·</span>
+        </div>
+      </div>
+      <h1 class="hero__title">
+        <div class="hero__line">
+          <span class="hero__word reveal-word">Product</span>
+        </div>
+        <div class="hero__line">
+          <span class="hero__word reveal-word delay-1">Designer</span>
+        </div>
+        <div class="hero__line hero__line--sub">
+          <span class="hero__word reveal-word delay-2">crafting</span>
+          <span class="hero__word hero__accent reveal-word delay-3">digital</span>
+        </div>
+        <div class="hero__line hero__line--sub">
+          <span class="hero__word reveal-word delay-4">experiences</span>
+        </div>
+      </h1>
+      <div class="hero__meta reveal-up delay-5">
+        <p class="hero__desc">6+ years designing across business & gaming — turning complexity into clarity.</p>
+        <a href="#works" class="hero__cta">
+          <span>See my work</span>
+          <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </a>
+      </div>
+    </div>
+    <div class="hero__scroll">
+      <div class="hero__scroll-line"></div>
+      <span>scroll</span>
+    </div>
+  </section>
+
+  <!-- Works -->
+  <section class="works" id="works">
+    <div class="container">
+      <div class="section-header reveal-up">
+        <span class="section-label">Selected work</span>
+        <h2 class="section-title">Projects</h2>
+      </div>
+
+      <div class="works__grid">
+
+        <article class="work-card work-card--large reveal-card" data-index="0">
+          <a href="cura.html" class="work-card__link">
+            <div class="work-card__image">
+              <img src="assets/cura-cover.png" alt="Cura — Find & rate your doctor, case study cover" class="work-card__img" />
+              <div class="work-card__overlay">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M7 17L17 7M17 7H7M17 7v10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </div>
+            </div>
+            <div class="work-card__info">
+              <div class="work-card__meta">
+                <span class="work-card__tag">UX/UI Case Study</span>
+                <span class="work-card__tag">HealthTech</span>
+              </div>
+              <h3 class="work-card__title">Cura — Find & Rate Your Doctor</h3>
+              <p class="work-card__desc">End-to-end case study: from research and personas to a polished mobile UI.</p>
+            </div>
+          </a>
+        </article>
+
+        <article class="work-card reveal-card" data-index="1">
+          <a href="https://railwaymen.org/case-studies/alamar" target="_blank" rel="noopener" class="work-card__link">
+            <div class="work-card__image">
+              <img src="assets/alamar-cover.jpg" alt="Alamar Foods — e-wallet system on desktop and mobile" class="work-card__img" />
+              <div class="work-card__overlay">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M7 17L17 7M17 7H7M17 7v10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </div>
+            </div>
+            <div class="work-card__info">
+              <div class="work-card__meta">
+                <span class="work-card__tag">Product Design</span>
+              </div>
+              <h3 class="work-card__title">Alamar</h3>
+              <p class="work-card__desc">Case study from Railwaymen — full product design cycle.</p>
+            </div>
+          </a>
+        </article>
+
+        <article class="work-card reveal-card" data-index="2">
+          <a href="amber.html" class="work-card__link">
+            <div class="work-card__image">
+              <img src="assets/amber-cover.png" alt="Amber Design System — bold orange wordmark on near-black cover" class="work-card__img" />
+              <div class="work-card__overlay">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M7 17L17 7M17 7H7M17 7v10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </div>
+            </div>
+            <div class="work-card__info">
+              <div class="work-card__meta">
+                <span class="work-card__tag">Design Systems</span>
+                <span class="work-card__tag">Figma</span>
+              </div>
+              <h3 class="work-card__title">Amber Design System</h3>
+              <p class="work-card__desc">Atomic tokens to full dashboards — light and dark from one variable set.</p>
+            </div>
+          </a>
+        </article>
+
+        <article class="work-card work-card--wide reveal-card" data-index="3">
+          <a href="jupiter.html" class="work-card__link">
+            <div class="work-card__image">
+              <img src="assets/jupiter-tile.png" alt="Jupiter crypto tracker — holdings overview on two phones, light and dark mode" class="work-card__img" />
+              <div class="work-card__overlay">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M7 17L17 7M17 7H7M17 7v10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </div>
+            </div>
+            <div class="work-card__info">
+              <div class="work-card__meta">
+                <span class="work-card__tag">UX/UI Design</span>
+                <span class="work-card__tag">Mobile</span>
+              </div>
+              <h3 class="work-card__title">Jupiter — Crypto Tracker App</h3>
+              <p class="work-card__desc">App and landing page in one story — crypto tracking without the noise.</p>
+            </div>
+          </a>
+        </article>
+
+        <article class="work-card reveal-card" data-index="4">
+          <a href="playjoy.html" class="work-card__link">
+            <div class="work-card__image">
+              <div class="work-card__playjoy">
+                <img src="assets/playjoy-logo.svg" alt="" class="work-card__playjoy-logo" />
+                <img src="assets/playjoy-joystick.png" alt="PlayJoy Studios — illustrated purple gamepad mascot" class="work-card__playjoy-pad" />
+              </div>
+              <div class="work-card__overlay">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M7 17L17 7M17 7H7M17 7v10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </div>
+            </div>
+            <div class="work-card__info">
+              <div class="work-card__meta">
+                <span class="work-card__tag">Gaming</span>
+                <span class="work-card__tag">Product Design</span>
+              </div>
+              <h3 class="work-card__title">PlayJoy Studios</h3>
+              <p class="work-card__desc">The digital home of a game-dev studio — trailer energy, sales-deck clarity.</p>
+            </div>
+          </a>
+        </article>
+
+        <article class="work-card reveal-card" data-index="5">
+          <a href="instock.html" class="work-card__link">
+            <div class="work-card__image">
+              <img src="assets/instock-dashboard.png" alt="InStock supplies manager — teal dashboard with sales, calendar and shift roster" class="work-card__img" />
+              <div class="work-card__overlay">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M7 17L17 7M17 7H7M17 7v10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </div>
+            </div>
+            <div class="work-card__info">
+              <div class="work-card__meta">
+                <span class="work-card__tag">SaaS</span>
+                <span class="work-card__tag">Mobile</span>
+              </div>
+              <h3 class="work-card__title">InStock — Supplies Manager</h3>
+              <p class="work-card__desc">A web app that turned spreadsheet chaos into two saved hours per employee, daily.</p>
+            </div>
+          </a>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- About strip -->
+  <section class="about" id="about">
+    <div class="container">
+      <div class="about__inner reveal-up">
+        <div class="about__text">
+          <span class="section-label">About</span>
+          <p class="about__body">I'm a product designer passionate about the intersection of business strategy and human-centered design. With 6+ years across industries — from fintech to gaming — I bring clarity to complex problems and craft interfaces people actually enjoy using.</p>
+        </div>
+        <div class="about__links">
+          <a href="mailto:anna.figura259@gmail.com" class="about__link">Email me ↗</a>
+          <a href="assets/Anna_Figura_CV.pdf" download class="about__link">Download CV ↗</a>
+          <a href="https://www.linkedin.com/in/afigura/" target="_blank" rel="noopener" class="about__link">LinkedIn ↗</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- How I use AI -->
+  <section class="ai" id="ai">
+    <div class="container">
+      <div class="section-header reveal-up">
+        <span class="section-label">Augmented workflow</span>
+        <h2 class="section-title">How I use AI?</h2>
+        <p class="ai__sub">The design toolkit is being rewritten in real time — I'm constantly learning new tools and practices to optimise design work in the modern world, testing what genuinely speeds up the craft and dropping what doesn't.</p>
+      </div>
+
+      <div class="ai__grid">
+        <div class="ai-box reveal-card" data-index="0">
+          <h3 class="ai-box__title">Work process optimisation</h3>
+          <p class="ai-box__desc">Automating the repetitive layer of design work — renaming layers, generating variants, drafting documentation — so the hours go into decisions, not busywork.</p>
+        </div>
+        <div class="ai-box reveal-card" data-index="1">
+          <h3 class="ai-box__title">Rapid prototyping</h3>
+          <p class="ai-box__desc">Turning an idea into a clickable prototype in hours with v0 and Framer AI — testing concepts with real users before committing a single sprint to them.</p>
+        </div>
+        <div class="ai-box reveal-card" data-index="2">
+          <h3 class="ai-box__title">Research synthesis</h3>
+          <p class="ai-box__desc">Feeding interview transcripts and survey data to LLMs for first-pass clustering — then validating themes myself. Days of affinity mapping become an afternoon.</p>
+        </div>
+        <div class="ai-box reveal-card" data-index="3">
+          <h3 class="ai-box__title">Copy & UX writing</h3>
+          <p class="ai-box__desc">Drafting microcopy, empty states, and error messages in the product's voice — AI proposes ten options, I pick and polish the one that sounds human.</p>
+        </div>
+        <div class="ai-box reveal-card" data-index="4">
+          <h3 class="ai-box__title">Visual exploration</h3>
+          <p class="ai-box__desc">Generating moodboards, brand directions, and illustration styles with image models — widening the creative funnel before narrowing it with intent.</p>
+        </div>
+        <div class="ai-box reveal-card" data-index="5">
+          <h3 class="ai-box__title">Design-to-code handoff</h3>
+          <p class="ai-box__desc">Bridging Figma and the codebase with AI — generating clean component code from designs so engineers review instead of rebuild, and nothing gets lost in translation.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- AI tools ticker -->
+    <div class="ai__ticker reveal-up">
+      <div class="ai__ticker-track">
+        <span class="ai-tool"><img src="assets/ai/claude.svg" alt="" />Claude</span>
+        <span class="ai-tool"><img src="assets/ai/v0.svg" alt="" />v0</span>
+        <span class="ai-tool"><img src="assets/ai/figma.svg" alt="" />Figma AI</span>
+        <span class="ai-tool"><img src="assets/ai/framer.svg" alt="" />Framer AI</span>
+        <span class="ai-tool"><span class="ai-tool__mono">R</span>Reve AI</span>
+        <span class="ai-tool"><span class="ai-tool__mono">L</span>Looka</span>
+        <span class="ai-tool"><img src="assets/ai/googlegemini.svg" alt="" />Google Stitch</span>
+        <span class="ai-tool"><span class="ai-tool__mono">R</span>Relume AI</span>
+        <span class="ai-tool"><img src="assets/ai/canva.svg" alt="" />Canva AI</span>
+        <span class="ai-tool"><img src="assets/ai/openai.svg" alt="" />ChatGPT</span>
+        <!-- duplicate for seamless loop -->
+        <span class="ai-tool"><img src="assets/ai/claude.svg" alt="" />Claude</span>
+        <span class="ai-tool"><img src="assets/ai/v0.svg" alt="" />v0</span>
+        <span class="ai-tool"><img src="assets/ai/figma.svg" alt="" />Figma AI</span>
+        <span class="ai-tool"><img src="assets/ai/framer.svg" alt="" />Framer AI</span>
+        <span class="ai-tool"><span class="ai-tool__mono">R</span>Reve AI</span>
+        <span class="ai-tool"><span class="ai-tool__mono">L</span>Looka</span>
+        <span class="ai-tool"><img src="assets/ai/googlegemini.svg" alt="" />Google Stitch</span>
+        <span class="ai-tool"><span class="ai-tool__mono">R</span>Relume AI</span>
+        <span class="ai-tool"><img src="assets/ai/canva.svg" alt="" />Canva AI</span>
+        <span class="ai-tool"><img src="assets/ai/openai.svg" alt="" />ChatGPT</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Blog -->
+  <section class="blog" id="blog">
+    <div class="container">
+      <div class="section-header reveal-up">
+        <span class="section-label">Thoughts</span>
+        <h2 class="section-title">Writing</h2>
+      </div>
+
+      <div class="blog__list">
+
+        <article class="blog-item reveal-up" data-index="0">
+          <a href="#" class="blog-item__link">
+            <div class="blog-item__inner">
+              <div class="blog-item__left">
+                <span class="blog-item__num">01</span>
+                <div>
+                  <h3 class="blog-item__title">Learning UX/UI Basics for Beginners</h3>
+                  <p class="blog-item__desc">A practical guide to starting your design journey without feeling overwhelmed.</p>
+                </div>
+              </div>
+              <div class="blog-item__right">
+                <span class="blog-item__tag">Design Education</span>
+                <svg class="blog-item__arrow" width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M4 10h12M12 6l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </div>
+            </div>
+          </a>
+        </article>
+
+        <article class="blog-item reveal-up" data-index="1">
+          <a href="#" class="blog-item__link">
+            <div class="blog-item__inner">
+              <div class="blog-item__left">
+                <span class="blog-item__num">02</span>
+                <div>
+                  <h3 class="blog-item__title">Design Systems' Role in Software Development</h3>
+                  <p class="blog-item__desc">How a well-built design system becomes the single source of truth for product teams.</p>
+                </div>
+              </div>
+              <div class="blog-item__right">
+                <span class="blog-item__tag">Systems</span>
+                <svg class="blog-item__arrow" width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M4 10h12M12 6l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </div>
+            </div>
+          </a>
+        </article>
+
+        <article class="blog-item reveal-up" data-index="2">
+          <a href="#" class="blog-item__link">
+            <div class="blog-item__inner">
+              <div class="blog-item__left">
+                <span class="blog-item__num">03</span>
+                <div>
+                  <h3 class="blog-item__title">Qualitative vs. Quantitative Research Methods</h3>
+                  <p class="blog-item__desc">When to use each method and how to combine them for richer insights.</p>
+                </div>
+              </div>
+              <div class="blog-item__right">
+                <span class="blog-item__tag">Research</span>
+                <svg class="blog-item__arrow" width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M4 10h12M12 6l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </div>
+            </div>
+          </a>
+        </article>
+
+        <article class="blog-item reveal-up" data-index="3">
+          <a href="#" class="blog-item__link">
+            <div class="blog-item__inner">
+              <div class="blog-item__left">
+                <span class="blog-item__num">04</span>
+                <div>
+                  <h3 class="blog-item__title">AI's Impact on Design Professions</h3>
+                  <p class="blog-item__desc">Navigating the shift — what AI changes, what it amplifies, and how designers evolve.</p>
+                </div>
+              </div>
+              <div class="blog-item__right">
+                <span class="blog-item__tag">AI & Design</span>
+                <svg class="blog-item__arrow" width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M4 10h12M12 6l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </div>
+            </div>
+          </a>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact CTA -->
+  <section class="contact" id="contact">
+    <div class="container">
+      <div class="contact__inner reveal-up">
+        <span class="section-label">Let's talk</span>
+        <h2 class="contact__title">Have a project in mind?</h2>
+        <p class="contact__sub">I'm open to freelance opportunities and collaborations.</p>
+        <a href="mailto:anna.figura259@gmail.com" class="contact__cta">
+          <span>anna.figura259@gmail.com</span>
+          <svg width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M4 10h12M12 6l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__inner">
+        <p class="footer__copy">© 2026 Anna Figura</p>
+        <div class="footer__socials">
+          <a href="https://www.linkedin.com/in/afigura/" target="_blank" rel="noopener" class="footer__social">LinkedIn</a>
+          <a href="https://www.behance.net/uxfrk" target="_blank" rel="noopener" class="footer__social">Behance</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Cursor -->
+  <div class="cursor" id="cursor"></div>
+  <div class="cursor-follower" id="cursorFollower"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>

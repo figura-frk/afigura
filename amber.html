@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Amber Design System · Anna Figura</title>
+  <link rel="icon" type="image/x-icon" href="assets/favicon/favicon.ico" />
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png" />
+  <link rel="manifest" href="assets/favicon/site.webmanifest" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;600;700;800;900&family=Space+Mono&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="project.css" />
+  <link rel="stylesheet" href="amber-theme.css" />
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav class="pnav" id="pnav">
+    <div class="pnav__inner">
+      <a href="index.html" class="pnav__back">
+        <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M13 8H3M7 4L3 8l4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        <span>Back to home</span>
+      </a>
+      <a href="mailto:anna.figura259@gmail.com" class="pnav__contact">Get in touch</a>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <header class="phero">
+    <div class="pcontainer">
+      <div class="phero__badge reveal-up">
+        <span class="phero__wordmark">AMBER</span>
+        Design System · v1.0 · 2026
+      </div>
+      <h1 class="phero__title">
+        <span class="reveal-word">Amber</span>
+        <span class="phero__title-sub reveal-word delay-1">One system, every screen, both themes</span>
+      </h1>
+      <p class="phero__lead reveal-up delay-2">A fintech-grade design system built atomically in Figma — tokens, components, and patterns that assemble into full dashboards. WCAG 2.1 AA contrast, light and dark themes from a single variable set, and an 8px radius language throughout.</p>
+
+      <ul class="phero__facts reveal-up delay-3">
+        <li><span>Role</span>Design Systems Designer</li>
+        <li><span>Method</span>Atomic design · Figma variables</li>
+        <li><span>Accessibility</span>WCAG 2.1 AA</li>
+        <li><span>Typography</span>Nunito Sans · 8px radius</li>
+      </ul>
+    </div>
+  </header>
+
+  <!-- Cover visual -->
+  <section class="pcover reveal-up">
+    <div class="pcontainer">
+      <img src="assets/amber-cover.png" alt="Amber Design System cover — bold orange wordmark on near-black" class="pcover__img" />
+    </div>
+  </section>
+
+  <!-- Body -->
+  <main class="pbody">
+    <div class="pcontainer pcontainer--narrow">
+
+      <section class="psection reveal-up">
+        <span class="plabel">01 — Overview</span>
+        <h2>Design decisions, made once</h2>
+        <p>Amber exists so that no one on the team ever debates a button radius again. Every color, spacing step, and state lives as a Figma variable; every component is built from those tokens and nothing else. Flip one mode switch and the entire dashboard re-themes from light to dark — no detached instances, no manual overrides.</p>
+      </section>
+
+      <section class="psection reveal-up">
+        <span class="plabel">02 — Tokens</span>
+        <h2>A warm neutral base, one decisive accent</h2>
+        <p>The palette pairs warm stone neutrals with a single high-energy amber-orange for primary actions. Semantic feedback colors — success, warning, error — each ship with an AA-compliant text shade and a subtle background tint, so alerts and badges compose themselves.</p>
+        <div class="pswatches">
+          <div class="pswatch" style="--c:#f97316"><span>action/primary<br>#F97316</span></div>
+          <div class="pswatch" style="--c:#1c1917"><span>text/primary<br>#1C1917</span></div>
+          <div class="pswatch pswatch--light" style="--c:#ffedd5"><span>primary-subtle<br>#FFEDD5</span></div>
+          <div class="pswatch pswatch--light" style="--c:#fafaf9"><span>bg/surface<br>#FAFAF9</span></div>
+        </div>
+        <div class="pswatches">
+          <div class="pswatch" style="--c:#15803d"><span>text/success<br>#15803D</span></div>
+          <div class="pswatch" style="--c:#b45309"><span>feedback/warning<br>#B45309</span></div>
+          <div class="pswatch" style="--c:#b91c1c"><span>text/error<br>#B91C1C</span></div>
+          <div class="pswatch" style="--c:#1e3a8a"><span>button/secondary<br>#1E3A8A</span></div>
+        </div>
+      </section>
+
+      <section class="psection reveal-up">
+        <span class="plabel">03 — Components</span>
+        <h2>The library, alive on this page</h2>
+        <p>These aren't screenshots — every element below is rebuilt in code from Amber's tokens, exactly as specified in Figma. Hover, click, and toggle them.</p>
+
+        <!-- Buttons -->
+        <div class="acomp">
+          <div class="acomp__demo">
+            <button class="am-btn am-btn--filled">Add transaction</button>
+            <button class="am-btn am-btn--outlined">Export CSV</button>
+            <button class="am-btn am-btn--secondary">Connect bank</button>
+          </div>
+          <div class="acomp__info">
+            <h3>Buttons</h3>
+            <p>Three weights of intent: filled amber for the one primary action per view, outlined for secondary actions, and deep navy for trusted third-party flows. All share a 44px height — comfortably above the WCAG touch-target minimum.</p>
+          </div>
+        </div>
+
+        <!-- Badges & Tags -->
+        <div class="acomp">
+          <div class="acomp__demo">
+            <span class="am-badge am-badge--success">On track</span>
+            <span class="am-badge am-badge--warning">Watch</span>
+            <span class="am-badge am-badge--error">Over</span>
+            <span class="am-tag">Q1 2026 <b>×</b></span>
+            <span class="am-tag">EUR only <b>×</b></span>
+          </div>
+          <div class="acomp__info">
+            <h3>Badges & Tags</h3>
+            <p>Badges pair a semantic text color with its subtle background tint — status readable at a glance, contrast guaranteed by the token pairing. Tags are dismissible filters with the same 8px radius language.</p>
+          </div>
+        </div>
+
+        <!-- Alert -->
+        <div class="acomp">
+          <div class="acomp__demo acomp__demo--block">
+            <div class="am-alert">
+              <span class="am-alert__icon">!</span>
+              <div><strong>3 invoices are overdue.</strong> Review them before the end of the billing cycle to avoid late fees.</div>
+              <button class="am-alert__close">×</button>
+            </div>
+          </div>
+          <div class="acomp__info">
+            <h3>Alert</h3>
+            <p>Page-level messaging on the warning tint. The icon, body, and dismiss control sit on one flexible row that survives any message length — tested from one line to four.</p>
+          </div>
+        </div>
+
+        <!-- Tabs -->
+        <div class="acomp">
+          <div class="acomp__demo acomp__demo--block">
+            <div class="am-tabs" id="amTabs">
+              <button class="am-tab am-tab--active">Overview</button>
+              <button class="am-tab">Invoices</button>
+              <button class="am-tab">Reports</button>
+            </div>
+          </div>
+          <div class="acomp__info">
+            <h3>Tab Item</h3>
+            <p>A 2px amber underline marks the active view; inactive tabs keep secondary text color until hover. The full 46px row is clickable, not just the label. Try them.</p>
+          </div>
+        </div>
+
+        <!-- KPI Card -->
+        <div class="acomp">
+          <div class="acomp__demo">
+            <div class="am-kpi">
+              <div class="am-kpi__head">Total balance <span class="am-badge am-badge--success">+4.2%</span></div>
+              <div class="am-kpi__value">€128,430</div>
+              <div class="am-kpi__trend am-kpi__trend--up">▲ 4.2% vs last month</div>
+            </div>
+            <div class="am-kpi">
+              <div class="am-kpi__head">Overdue invoices <span class="am-badge am-badge--error">3</span></div>
+              <div class="am-kpi__value">€1,120</div>
+              <div class="am-kpi__trend am-kpi__trend--down">▼ 3 invoices need action</div>
+            </div>
+          </div>
+          <div class="acomp__info">
+            <h3>KPI Card</h3>
+            <p>The dashboard's headline pattern: label, badge, figure, trend — in strict hierarchy. The trend line borrows semantic colors, so "up" isn't always green: an expense rising is set in error red.</p>
+          </div>
+        </div>
+
+        <!-- Progress -->
+        <div class="acomp">
+          <div class="acomp__demo acomp__demo--block">
+            <div class="am-budget">
+              <div class="am-budget__row"><span>Marketing</span><span>€3,750 / €5,000</span></div>
+              <div class="am-progress"><span style="width:75%"></span></div>
+            </div>
+            <div class="am-budget">
+              <div class="am-budget__row"><span>Office</span><span>€2,000 / €2,000</span></div>
+              <div class="am-progress am-progress--full"><span style="width:100%"></span></div>
+            </div>
+          </div>
+          <div class="acomp__info">
+            <h3>Progress Bar</h3>
+            <p>Budget consumption in an 8px track. Amber while spending is healthy; the fill switches to error red at 100% — the token does the warning, no extra UI needed.</p>
+          </div>
+        </div>
+
+        <!-- Form -->
+        <div class="acomp">
+          <div class="acomp__demo acomp__demo--block acomp__demo--form">
+            <label class="am-field">
+              <span class="am-field__label">Amount</span>
+              <input type="text" class="am-input" placeholder="€ 0.00" />
+              <span class="am-field__hint">Transfers over €10,000 require 2FA</span>
+            </label>
+            <div class="am-select">Checking ·· 4821 <svg width="12" height="12" viewBox="0 0 12 12"><path d="M2 4l4 4 4-4" stroke="currentColor" stroke-width="1.5" fill="none" stroke-linecap="round"/></svg></div>
+            <div class="am-search">
+              <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><circle cx="6" cy="6" r="4.5" stroke="currentColor" stroke-width="1.5"/><path d="M9.5 9.5L13 13" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+              <input type="text" placeholder="Search transactions…" />
+            </div>
+          </div>
+          <div class="acomp__info">
+            <h3>Form Field · Select · Search Bar</h3>
+            <p>Inputs share one anatomy — label, 44px control, hint line — so validation states swap in without layout shift. Focus rings use the amber accent at 2px, visible on both themes.</p>
+          </div>
+        </div>
+
+        <!-- Toast & Toggle -->
+        <div class="acomp">
+          <div class="acomp__demo acomp__demo--block">
+            <div class="am-toast am-toast--success"><b>✓</b> Transfer of €250.00 sent to Alex M.</div>
+            <div class="am-toast am-toast--error"><b>✕</b> Payment failed — card expired.</div>
+            <label class="am-toggle-row">
+              <span class="am-toggle"><input type="checkbox" checked><i></i></span>
+              Email me weekly summaries
+            </label>
+          </div>
+          <div class="acomp__info">
+            <h3>Toast & Toggle</h3>
+            <p>Toasts confirm or fail in one compact line using the same semantic pairs as badges. The toggle is a 44×24 switch — the thumb travels, the track re-colors, and the whole row is the hit area.</p>
+          </div>
+        </div>
+
+        <!-- Pagination -->
+        <div class="acomp">
+          <div class="acomp__demo">
+            <div class="am-pagination">
+              <button>‹</button>
+              <button class="am-page--active">1</button>
+              <button>2</button>
+              <button>3</button>
+              <span>…</span>
+              <button>12</button>
+              <button>›</button>
+            </div>
+          </div>
+          <div class="acomp__info">
+            <h3>Pagination</h3>
+            <p>40px square targets with a filled amber current page. Ellipsis truncation keeps it to seven slots no matter how long the table gets.</p>
+          </div>
+        </div>
+
+      </section>
+
+      <section class="psection reveal-up">
+        <span class="plabel">04 — In Context</span>
+        <h2>From atoms to a working dashboard</h2>
+        <p>The proof of a system is the screen it builds. The showcase assembles every component above into a financial overview — KPI row, cash-flow chart, budgets, transactions table, quick transfer, and notifications — and then re-themes it to dark by switching one variable mode.</p>
+        <figure class="pfigure">
+          <img src="assets/amber-dashboard-light.png" alt="Amber dashboard in light theme — financial overview with KPI cards, chart, budgets and transactions" />
+          <figcaption>Light theme — bg/surface #FAFAF9, every element an instance from the library</figcaption>
+        </figure>
+        <figure class="pfigure">
+          <img src="assets/amber-dashboard-dark.png" alt="Amber dashboard in dark theme — same layout re-themed via variable modes" />
+          <figcaption>Dark theme — the same frame, re-colored entirely by Figma variable modes</figcaption>
+        </figure>
+      </section>
+
+      <section class="psection reveal-up">
+        <span class="plabel">05 — Outcome</span>
+        <h2>Consistency that compounds</h2>
+        <p>With tokens as the single source of truth, new screens come together in minutes instead of days, dark mode is free rather than a second project, and accessibility is baked into the palette instead of audited after the fact. Amber v1.0 covers the full core kit — and its atomic structure means v2 grows without breaking a single instance.</p>
+      </section>
+
+      <!-- Figma CTA -->
+      <div class="afigma reveal-up">
+        <a href="https://www.figma.com/design/F8GOzJImPnq4eZsRFjUOUU/Untitled?node-id=19-2" target="_blank" rel="noopener" class="afigma__btn">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M8.5 2h3.5v7H8.5a3.5 3.5 0 1 1 0-7z" fill="#f24e1e"/><path d="M12 2h3.5a3.5 3.5 0 1 1 0 7H12V2z" fill="#ff7262"/><path d="M8.5 9h3.5v7H8.5a3.5 3.5 0 1 1 0-7z" fill="#a259ff"/><path d="M15.5 9a3.5 3.5 0 1 1 0 7 3.5 3.5 0 0 1 0-7z" fill="#1abcfe"/><path d="M8.5 16h3.5v2.5A3.5 3.5 0 1 1 8.5 16z" fill="#0acf83"/></svg>
+          Open the design system in Figma
+        </a>
+      </div>
+
+      <!-- Footer nav -->
+      <div class="pfooter-nav reveal-up">
+        <a href="index.html" class="pfooter-nav__back">
+          <svg width="18" height="18" viewBox="0 0 16 16" fill="none"><path d="M13 8H3M7 4L3 8l4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          Back to home
+        </a>
+        <a href="mailto:anna.figura259@gmail.com" class="pfooter-nav__cta">Let's work together →</a>
+      </div>
+
+    </div>
+  </main>
+
+  <script>
+    const io = new IntersectionObserver((entries) => {
+      entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('visible'); io.unobserve(e.target); } });
+    }, { threshold: 0.12, rootMargin: '0px 0px -40px 0px' });
+    document.querySelectorAll('.reveal-up, .reveal-word').forEach(el => io.observe(el));
+
+    window.addEventListener('scroll', () => {
+      document.getElementById('pnav').classList.toggle('scrolled', window.scrollY > 20);
+    }, { passive: true });
+
+    // interactive tabs demo
+    document.querySelectorAll('#amTabs .am-tab').forEach(tab => {
+      tab.addEventListener('click', () => {
+        document.querySelectorAll('#amTabs .am-tab').forEach(t => t.classList.remove('am-tab--active'));
+        tab.classList.add('am-tab--active');
+      });
+    });
+  </script>
+</body>
+</html>

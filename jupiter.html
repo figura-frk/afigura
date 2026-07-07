@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Jupiter — Crypto Tracker App · Anna Figura</title>
+  <link rel="icon" type="image/x-icon" href="assets/favicon/favicon.ico" />
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png" />
+  <link rel="manifest" href="assets/favicon/site.webmanifest" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&family=Space+Mono&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="project.css" />
+  <link rel="stylesheet" href="jupiter-theme.css" />
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav class="pnav" id="pnav">
+    <div class="pnav__inner">
+      <a href="index.html" class="pnav__back">
+        <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M13 8H3M7 4L3 8l4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        <span>Back to home</span>
+      </a>
+      <a href="mailto:anna.figura259@gmail.com" class="pnav__contact">Get in touch</a>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <header class="phero">
+    <div class="pcontainer">
+      <div class="phero__badge reveal-up">
+        <span class="phero__planet"></span>
+        App & Landing Page · UX/UI · 2023
+      </div>
+      <h1 class="phero__title">
+        <span class="reveal-word">Jupiter</span>
+        <span class="phero__title-sub reveal-word delay-1">Crypto tracking without the noise</span>
+      </h1>
+      <p class="phero__lead reveal-up delay-2">A portfolio tracker and its landing page, designed as one product story — live rates from the exchange API, transactions added in two clicks, and a calm neutral interface that keeps a volatile market readable.</p>
+
+      <ul class="phero__facts reveal-up delay-3">
+        <li><span>Role</span>UX/UI Designer</li>
+        <li><span>Scope</span>Web app · Mobile · Landing page</li>
+        <li><span>Modes</span>Light & dark · Free & PRO tiers</li>
+        <li><span>Behance</span><a href="https://www.behance.net/gallery/179825451/App-LP-Jupiter-Crypto-tracker-app" target="_blank" rel="noopener">View project ↗</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <!-- Cover visual -->
+  <section class="pcover reveal-up">
+    <div class="pcontainer">
+      <img src="assets/jupiter-hero.png" alt="Jupiter mobile app — holdings overview in light and dark mode on two phones" class="pcover__img" />
+    </div>
+  </section>
+
+  <!-- Body -->
+  <main class="pbody">
+    <div class="pcontainer pcontainer--narrow">
+
+      <section class="psection reveal-up">
+        <span class="plabel">01 — Overview</span>
+        <h2>Crypto is chaotic. Your tracker shouldn't be.</h2>
+        <p>Most crypto apps compete on adrenaline — flashing tickers, red-green everything, dashboards that feel like a trading floor. Jupiter takes the opposite bet: a near-monochrome interface on cool gray, where the only things allowed to shout are the numbers that changed. The result reads less like a casino and more like a bank statement you actually enjoy opening.</p>
+      </section>
+
+      <section class="psection reveal-up">
+        <span class="plabel">02 — Visual Language</span>
+        <h2>Gray canvas, one planet of color</h2>
+        <p>The system is deliberately quiet: soft-shadowed white cards float on a #E0E3E6 canvas, headlines are set in heavy black Poppins, and semantic green/red is reserved strictly for market movement. The single brand gesture is the Jupiter planet — an orange gradient sphere that anchors the logo, the accent color, and the landing page's closing section.</p>
+        <div class="pswatches">
+          <div class="pswatch pswatch--light" style="--c:#e0e3e6"><span>Canvas Gray<br>#E0E3E6</span></div>
+          <div class="pswatch" style="--c:#1a1a1a"><span>Ink<br>#1A1A1A</span></div>
+          <div class="pswatch" style="--c:#ec9a3c"><span>Jupiter Orange<br>#EC9A3C</span></div>
+          <div class="pswatch" style="--c:#27ae60"><span>Market Up<br>#27AE60</span></div>
+        </div>
+      </section>
+
+      <section class="psection reveal-up">
+        <span class="plabel">03 — The Dashboard</span>
+        <h2>Easy as one…</h2>
+        <p>The holdings overview is the whole product in one screen: portfolio value, per-coin balances, a live chart, and crypto news — fed by an exchange API so rates update at the shortest possible interval. No refresh button, no stale numbers, no digging through tabs to learn what your portfolio did today.</p>
+        <figure class="pfigure">
+          <img src="assets/jupiter-tablets.png" alt="Jupiter dashboard on stacked tablet screens — holdings overview with live chart and asset list" />
+          <figcaption>Holdings overview — API-fed rates, chart and asset list on one calm surface</figcaption>
+        </figure>
+      </section>
+
+      <section class="psection reveal-up">
+        <span class="plabel">04 — Core Flow</span>
+        <h2>Two clicks away from the goal</h2>
+        <p>Adding a transaction is the flow users repeat daily, so it earned the most design attention: pick your coin from a searchable dropdown, enter the amount, done. The coin detail view answers the follow-up questions in place — profit/loss, current price, and full transaction history without leaving the screen.</p>
+        <figure class="pfigure">
+          <img src="assets/jupiter-flow.png" alt="Add transaction flow — coin picker dropdown over the dashboard" />
+          <figcaption>Pick your coin, add transaction — the two-click flow that names the section</figcaption>
+        </figure>
+        <figure class="pfigure">
+          <img src="assets/jupiter-detail.png" alt="Coin detail — Solana transaction form, Binance chart, profit/loss and history" />
+          <figcaption>Coin detail — +2.12% profit/loss, live Binance chart, and history in one view</figcaption>
+        </figure>
+      </section>
+
+      <section class="psection reveal-up">
+        <span class="plabel">05 — Mobile & PRO</span>
+        <h2>Keep track in your pocket</h2>
+        <p>The mobile version ships as a PRO perk with customizable settings — and it's where the dark mode earns its keep. Both themes were designed in parallel from the start, so the black phone in a user's hand mirrors the light desktop at their desk, down to the last card radius.</p>
+      </section>
+
+      <section class="psection reveal-up">
+        <span class="plabel">06 — Landing Page</span>
+        <h2>The product sells itself — the page just holds it up</h2>
+        <p>The landing page reuses the app's own design system instead of inventing a marketing skin: real screens as hero imagery, section headlines in the product's voice ("Easy as one…", "Two clicks away from the goal"), and a single conversion moment — a 7-day PRO trial with no card required — pinned next to the orange planet.</p>
+        <figure class="pfigure">
+          <img src="assets/jupiter-cta.png" alt="Landing page closing section — 7-day PRO free trial CTA with the orange Jupiter planet and footer" />
+          <figcaption>The closing argument — no payment, no cards, just download and enjoy</figcaption>
+        </figure>
+      </section>
+
+      <section class="psection reveal-up">
+        <span class="plabel">07 — Outcome</span>
+        <h2>Calm is a feature</h2>
+        <p>Jupiter demonstrates a full product arc — app UI in two themes, a repeatable core flow measured in clicks, and a landing page that converts by showing rather than telling. The restraint is the point: in a category addicted to noise, an interface that keeps its voice down is the one users keep open all day.</p>
+        <p><a href="https://www.behance.net/gallery/179825451/App-LP-Jupiter-Crypto-tracker-app" target="_blank" rel="noopener"><strong>View the full case study on Behance ↗</strong></a></p>
+      </section>
+
+      <!-- Footer nav -->
+      <div class="pfooter-nav reveal-up">
+        <a href="index.html" class="pfooter-nav__back">
+          <svg width="18" height="18" viewBox="0 0 16 16" fill="none"><path d="M13 8H3M7 4L3 8l4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          Back to home
+        </a>
+        <a href="mailto:anna.figura259@gmail.com" class="pfooter-nav__cta">Let's work together →</a>
+      </div>
+
+    </div>
+  </main>
+
+  <script>
+    const io = new IntersectionObserver((entries) => {
+      entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('visible'); io.unobserve(e.target); } });
+    }, { threshold: 0.12, rootMargin: '0px 0px -40px 0px' });
+    document.querySelectorAll('.reveal-up, .reveal-word').forEach(el => io.observe(el));
+
+    window.addEventListener('scroll', () => {
+      document.getElementById('pnav').classList.toggle('scrolled', window.scrollY > 20);
+    }, { passive: true });
+  </script>
+</body>
+</html>

@@ -1,0 +1,63 @@
+/* ─── Jupiter theme — cool gray + orange from the Behance project ──── */
+:root {
+  --p-bg: #e0e3e6;
+  --p-surface: #ffffff;
+  --p-text: #1a1a1a;
+  --p-muted: #5c6166;
+  --p-dim: #9aa0a6;
+  --p-green-deep: #1a1a1a;
+  --p-green: #ec9a3c;
+  --p-orange: #ec9a3c;
+  --p-border: rgba(26, 26, 26, 0.1);
+  --font: 'Poppins', sans-serif;
+}
+
+.pnav.scrolled {
+  background: rgba(224, 227, 230, 0.9);
+}
+
+.pnav__contact:hover { background: #1a1a1a; border-color: #1a1a1a; }
+
+.phero__title-sub { color: var(--p-orange); }
+
+/* Jupiter planet badge */
+.phero__planet {
+  width: 34px; height: 34px;
+  border-radius: 50%;
+  background: radial-gradient(circle at 32% 28%, #f8c169 0%, #ec9a3c 45%, #d97a26 100%);
+  box-shadow: inset -4px -4px 10px rgba(160, 80, 10, 0.35), 0 4px 12px rgba(236, 154, 60, 0.4);
+  flex-shrink: 0;
+}
+
+.pcover__img,
+.pfigure img { box-shadow: 0 24px 48px -24px rgba(26, 26, 26, 0.2); }
+
+/* case study figures */
+.pfigure { margin: 32px 0 8px; }
+.pfigure img {
+  display: block;
+  width: 100%;
+  border-radius: 14px;
+}
+.pfigure figcaption {
+  font-family: var(--font-mono);
+  font-size: 11px;
+  letter-spacing: 0.04em;
+  color: var(--p-dim);
+  margin-top: 12px;
+  text-align: center;
+}
+
+.pstat { background: var(--p-surface); border: none; box-shadow: 0 10px 24px -14px rgba(26,26,26,0.18); }
+blockquote { background: var(--p-surface); border-left-color: var(--p-orange); }
+
+.pswatch--light { border: 1px solid rgba(26,26,26,0.12); }
+.pswatch--light span { color: var(--p-muted); }
+
+.pfooter-nav__cta { background: #1a1a1a; border-radius: 100px; }
+.pfooter-nav__cta:hover { background: var(--p-orange); }
+
+.psection a { color: #c97718; }
+.psection a:hover { text-decoration: underline; }
+.phero__facts a { color: #c97718; }
+.phero__facts a:hover { text-decoration: underline; }

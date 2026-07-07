@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>[In]Stock — Supplies Manager · Anna Figura</title>
+  <link rel="icon" type="image/x-icon" href="assets/favicon/favicon.ico" />
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png" />
+  <link rel="manifest" href="assets/favicon/site.webmanifest" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Space+Mono:ital@0;1&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="project.css" />
+  <link rel="stylesheet" href="instock-theme.css" />
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav class="pnav" id="pnav">
+    <div class="pnav__inner">
+      <a href="index.html" class="pnav__back">
+        <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M13 8H3M7 4L3 8l4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        <span>Back to home</span>
+      </a>
+      <a href="mailto:anna.figura259@gmail.com" class="pnav__contact">Get in touch</a>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <header class="phero">
+    <div class="pcontainer">
+      <div class="phero__badge reveal-up">
+        <span class="phero__wordmark">[In]Stock</span>
+        UX/UI Case Study · 2021
+      </div>
+      <h1 class="phero__title">
+        <span class="reveal-word">InStock</span>
+        <span class="phero__title-sub reveal-word delay-1">Supplies manager for retail teams</span>
+      </h1>
+      <p class="phero__lead reveal-up delay-2">A web application that replaces spreadsheet chaos with a single source of truth for store inventory — designed end-to-end through a full Design Thinking process, from client workshops to high-fidelity UI.</p>
+
+      <ul class="phero__facts reveal-up delay-3">
+        <li><span>Role</span>UX/UI Designer (end-to-end)</li>
+        <li><span>Timeline</span>11.5 weeks · 2021</li>
+        <li><span>Platform</span>Web app (desktop)</li>
+        <li><span>Tools</span>Figma · Adobe Photoshop</li>
+      </ul>
+    </div>
+  </header>
+
+  <!-- Cover visual -->
+  <section class="pcover reveal-up">
+    <div class="pcontainer">
+      <img src="assets/instock-dashboard.png" alt="InStock dashboard — sales overview, calendar and employees on shift for an H&M store" class="pcover__img" />
+    </div>
+  </section>
+
+  <!-- Body -->
+  <main class="pbody">
+    <div class="pcontainer pcontainer--narrow">
+
+      <section class="psection reveal-up">
+        <span class="plabel">01 — Overview</span>
+        <h2>Retail runs on stock — and stock ran on spreadsheets</h2>
+        <p>Store teams were tracking thousands of products across collections, deliveries, and returns in overloaded Google Sheets — duplicated tabs, manual counts, and no way to see the state of a store at a glance. <strong>[In]Stock</strong> is a supplies-management web app that gives store and regional managers one clear view of stock, staff, and deliveries.</p>
+        <p>The project followed a five-phase Design Thinking process: <strong>Discover</strong> (1 week) → <strong>Empathise</strong> (2.5 weeks) → <strong>Ideate</strong> (1 week) → <strong>Design</strong> (3 weeks) → <strong>Develop</strong> (4 weeks), with stakeholders involved at every stage gate.</p>
+      </section>
+
+      <section class="psection reveal-up">
+        <span class="plabel">02 — Discover</span>
+        <h2>Two days in a workshop room beat two months of guessing</h2>
+        <p>We opened with a two-day online workshop with the client to map the business strategy, growth plans, and where software could actually move the needle. Stakeholder interviews followed — the leadership knew their pain points remarkably well and brought insights that shaped the whole product.</p>
+        <p>A business goals & value-mapping session distilled three pillars: <strong>Need to Grow</strong> (scale to new locations without scaling admin), <strong>Benefits</strong> (measurable time savings on daily operations), and <strong>Loyalty</strong> (a tool employees actually want to use, supporting retention and career growth).</p>
+        <div class="pstats">
+          <div class="pstat"><strong>~2h</strong><span>saved per employee per day by automating product flow tracking</span></div>
+          <div class="pstat"><strong>2 days</strong><span>of client workshops to align strategy before any design work</span></div>
+          <div class="pstat"><strong>2×</strong><span>positions per location freed up for higher-value work</span></div>
+        </div>
+      </section>
+
+      <section class="psection reveal-up">
+        <span class="plabel">03 — Empathise</span>
+        <h2>Meeting the people behind the spreadsheets</h2>
+        <p>I interviewed employees across store locations — managers, consultants, and senior staff — and shadowed how they actually worked. The finding was consistent: capable, friendly teams spending hours of every shift on manual data entry that the system should have been doing for them.</p>
+        <p>The research crystallised into <strong>Jane Goods</strong> — a 33-year-old regional manager in London overseeing several selling points for brands like H&M, Zara, Pull&Bear, and Bershka. Confident and ambitious, but forced to micromanage because organizing logistics across stores took too much effort.</p>
+        <figure class="pfigure">
+          <img src="assets/instock-persona.png" alt="User persona card for Jane Goods — regional manager, her goals, frustrations and skills" />
+          <figcaption>The persona synthesised from 5–10 user interviews across store locations</figcaption>
+        </figure>
+        <figure class="pfigure">
+          <img src="assets/instock-journey.png" alt="User journey map — from research and planning through delivery control to inventarisation" />
+          <figcaption>Journey map of one delivery cycle — the emotional dips marked exactly where the product had to help</figcaption>
+        </figure>
+      </section>
+
+      <section class="psection reveal-up">
+        <span class="plabel">04 — Ideate</span>
+        <h2>From sticky-note chaos to a clean information architecture</h2>
+        <p>User flows and a three-lane brainstorm turned research insights into structure. The site map settled on a dashboard with four functional pillars — <strong>Team</strong> (employees, shifts, permissions), <strong>Stock</strong> (current state by collection), <strong>Stock Refill</strong> (deliveries and returns), and <strong>Inventarisation</strong> (counts and reports) — ordered so that everything under MVP shipped first.</p>
+      </section>
+
+      <section class="psection reveal-up">
+        <span class="plabel">05 — Design</span>
+        <h2>Sketches → wireframes → a UI that disappears into the work</h2>
+        <p>Low-fidelity paper sketches let us break layouts cheaply; high-fidelity wireframes then locked the data hierarchy before a single color was applied. Only then came visual design — a calm mint-teal system with generous whitespace, so a screen full of stock numbers still reads at a glance during a busy shift.</p>
+        <figure class="pfigure">
+          <img src="assets/instock-wireframes.png" alt="Grid of high-fidelity wireframes covering dashboard, stock and team screens" />
+          <figcaption>High-fidelity wireframes — data hierarchy validated before visual design began</figcaption>
+        </figure>
+      </section>
+
+      <section class="psection reveal-up">
+        <span class="plabel">06 — Final UI</span>
+        <h2>One glance, full control of the store</h2>
+        <p>The dashboard answers a manager's first three questions — how are sales, who's on shift, when is the next delivery — without a single click. Deeper screens keep the same rhythm: persistent navigation, a live store header, and the calendar and shift roster always within reach.</p>
+        <figure class="pfigure">
+          <img src="assets/instock-team.png" alt="Team information screen — employee list with permissions, shifts and tenure" />
+          <figcaption>Team — permissions, shift patterns and tenure managed from one list</figcaption>
+        </figure>
+        <figure class="pfigure">
+          <img src="assets/instock-stock.png" alt="Stock data screen — current stock levels by collection" />
+          <figcaption>Stock — live counts by collection, with refill and return flows one tab away</figcaption>
+        </figure>
+        <figure class="pfigure">
+          <img src="assets/instock-inventory.png" alt="Inventarisation screen — counted items compared against system state with match status" />
+          <figcaption>Inventarisation — counted vs. expected, with discrepancies flagged automatically</figcaption>
+        </figure>
+        <div class="pswatches">
+          <div class="pswatch" style="--c:#3cb4ab"><span>InStock Teal<br>#3CB4AB</span></div>
+          <div class="pswatch" style="--c:#1d6f68"><span>Deep Teal<br>#1D6F68</span></div>
+          <div class="pswatch pswatch--light" style="--c:#d9f2ef"><span>Mint Tint<br>#D9F2EF</span></div>
+          <div class="pswatch pswatch--light" style="--c:#ffffff"><span>White<br>#FFFFFF</span></div>
+        </div>
+      </section>
+
+      <section class="psection reveal-up">
+        <span class="plabel">07 — Outcome</span>
+        <h2>Hours back, every single day</h2>
+        <p>The validated concept turned a spreadsheet-driven routine into a two-hour daily saving per employee, freed up two positions per location for customer-facing work, and gave regional managers like Jane a real-time picture of every store they run. Just as importantly, the process — workshops, research, and testing before pixels — meant the client shipped with confidence instead of assumptions.</p>
+        <p><a href="https://www.behance.net/gallery/133582491/UXUI-InStock-Supplies-Manager" target="_blank" rel="noopener"><strong>View the full case study on Behance ↗</strong></a></p>
+      </section>
+
+      <!-- Footer nav -->
+      <div class="pfooter-nav reveal-up">
+        <a href="index.html" class="pfooter-nav__back">
+          <svg width="18" height="18" viewBox="0 0 16 16" fill="none"><path d="M13 8H3M7 4L3 8l4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          Back to home
+        </a>
+        <a href="mailto:anna.figura259@gmail.com" class="pfooter-nav__cta">Let's work together →</a>
+      </div>
+
+    </div>
+  </main>
+
+  <script>
+    const io = new IntersectionObserver((entries) => {
+      entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('visible'); io.unobserve(e.target); } });
+    }, { threshold: 0.12, rootMargin: '0px 0px -40px 0px' });
+    document.querySelectorAll('.reveal-up, .reveal-word').forEach(el => io.observe(el));
+
+    window.addEventListener('scroll', () => {
+      document.getElementById('pnav').classList.toggle('scrolled', window.scrollY > 20);
+    }, { passive: true });
+  </script>
+</body>
+</html>
