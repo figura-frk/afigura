@@ -12,7 +12,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Space+Mono:ital@0;1&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="project.css" />
+  <link rel="stylesheet" href="project.css?v=2" />
 </head>
 <body>
 
@@ -176,7 +176,9 @@
     const io = new IntersectionObserver((entries) => {
       entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('visible'); io.unobserve(e.target); } });
     }, { threshold: 0.12, rootMargin: '0px 0px -40px 0px' });
-    document.querySelectorAll('.reveal-up, .reveal-word').forEach(el => io.observe(el));
+    document.querySelectorAll('.reveal-up, .reveal-word').forEach(el => {
+      if (el.closest('.phero')) { el.classList.add('visible'); } else { io.observe(el); }
+    });
 
     // Nav shadow on scroll
     window.addEventListener('scroll', () => {

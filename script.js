@@ -64,7 +64,16 @@
     });
   }, { threshold: 0.12, rootMargin: '0px 0px -40px 0px' });
 
-  document.querySelectorAll('.reveal-up, .reveal-word, .reveal-card').forEach(el => io.observe(el));
+  document.querySelectorAll('.reveal-up, .reveal-word, .reveal-card').forEach(el => {
+    // Hero elements sit above the fold but are clipped by overflow:hidden
+    // during their initial offset, so the observer can miss them on small
+    // screens — reveal them straight away instead.
+    if (el.closest('.hero')) {
+      el.classList.add('visible');
+    } else {
+      io.observe(el);
+    }
+  });
 })();
 
 /* ─── Hero parallax on scroll ───────────────────────────────────────── */
