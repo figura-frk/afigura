@@ -1,0 +1,77 @@
+/* ─── U.S. News theme — navy & editorial red on light ──────────────── */
+:root {
+  --p-bg: #fafbfd;
+  --p-surface: #ffffff;
+  --p-text: #14171f;
+  --p-muted: #4c5566;
+  --p-dim: #9aa1af;
+  --p-green-deep: #14171f;    /* dark CTA */
+  --p-green: #1b2a6b;         /* USN navy accent */
+  --p-orange: #d32f2f;        /* editorial red */
+  --p-border: #e3e6ec;
+  --font: 'Roboto', sans-serif;
+
+  --usn-navy: #1b2a6b;
+  --usn-blue: #1560bd;
+  --usn-red: #d32f2f;
+}
+
+.phero__title-sub { color: var(--usn-navy); }
+.plabel { color: var(--usn-red); }
+
+.phero__wordmark {
+  font-family: var(--font);
+  font-size: 14px;
+  font-weight: 900;
+  letter-spacing: 0.02em;
+  color: #fff;
+  background: var(--usn-red);
+  border-radius: 4px;
+  padding: 7px 12px;
+}
+.phero__latest {
+  font-style: normal;
+  color: var(--usn-red);
+  font-weight: 700;
+}
+
+.pnav__contact:hover { background: var(--usn-navy); border-color: var(--usn-navy); }
+.pfooter-nav__cta { background: var(--usn-navy); }
+.pfooter-nav__cta:hover { background: var(--usn-blue); }
+
+.pstat strong { color: var(--usn-navy); font-size: 26px; }
+
+/* feature list */
+.plist {
+  list-style: none;
+  padding: 0;
+  margin: 20px 0 28px;
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+.plist li {
+  position: relative;
+  padding: 14px 0 14px 30px;
+  color: var(--p-muted);
+  border-bottom: 1px solid var(--p-border);
+  line-height: 1.6;
+}
+.plist li:first-child { border-top: 1px solid var(--p-border); }
+.plist li::before {
+  content: '';
+  position: absolute;
+  left: 4px;
+  top: 24px;
+  width: 8px;
+  height: 8px;
+  border-radius: 2px;
+  background: var(--usn-red);
+}
+.plist strong { color: var(--p-text); font-weight: 700; }
+
+/* phone-format figure */
+.pfigure--phone img {
+  max-width: 340px;
+  margin: 0 auto;
+}

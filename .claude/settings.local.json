@@ -39,7 +39,15 @@
       "Bash(file amber-*.png)",
       "Bash(curl -sL -A \"Mozilla/5.0 \\(Macintosh; Intel Mac OS X 10_15_7\\) AppleWebKit/537.36 \\(KHTML, like Gecko\\) Chrome/126 Safari/537.36\" \"https://www.behance.net/gallery/179825451/App-LP-Jupiter-Crypto-tracker-app\" -o /tmp/jupiter.html)",
       "Bash(curl -sL -o jupiter-full.png \"https://mir-s3-cdn-cf.behance.net/project_modules/source/17d2e2179825451.65007301dc7db.png\")",
-      "Bash(sips -g pixelWidth -g pixelHeight jupiter-full.png)"
+      "Bash(sips -g pixelWidth -g pixelHeight jupiter-full.png)",
+      "Bash(curl -sL -o usnews-directory.png \"https://www.figma.com/api/mcp/asset/4d0b719c-05ec-4041-b080-6eb91c430958.png\")",
+      "Bash(curl -sL -o usnews-filter.png \"https://www.figma.com/api/mcp/asset/e0983f8e-2528-4eee-90e6-1976df77de76.png\")",
+      "Bash(curl -sL -o usnews-works.png \"https://www.figma.com/api/mcp/asset/32feb09a-091d-4adf-9f35-fde424ff5793.png\")",
+      "Bash(curl -sL -o usnews-profile.png \"https://www.figma.com/api/mcp/asset/95dc7095-6c11-4718-98b2-943d74923288.png\")",
+      "Bash(curl -sL -o usnews-old.png \"https://www.figma.com/api/mcp/asset/01f763d1-bfeb-4b35-8f45-795d52289859.png\")",
+      "Bash(sips -c 900 1424 --cropOffset 1 0 usnews-directory.png --out usnews-tile.png)",
+      "Bash(sips -g pixelWidth -g pixelHeight usnews-tile.png)",
+      "Bash(python3 -)"
     ]
   }
 }

@@ -119,7 +119,7 @@
   const messages = [
     'Available for freelance',
     'Open to collaborations',
-    '6+ years of experience',
+    '7+ years of experience',
   ];
   let msgIdx = 0, charIdx = 0, deleting = false;
   let textNode = null;
