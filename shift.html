@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Shift — Focus App · Anna Figura</title>
+  <link rel="icon" type="image/x-icon" href="assets/favicon/favicon.ico" />
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png" />
+  <link rel="manifest" href="assets/favicon/site.webmanifest" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&family=Space+Mono&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="project.css?v=2" />
+  <link rel="stylesheet" href="shift-theme.css" />
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav class="pnav" id="pnav">
+    <div class="pnav__inner">
+      <a href="index.html" class="pnav__back">
+        <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M13 8H3M7 4L3 8l4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        <span>Back to home</span>
+      </a>
+      <a href="mailto:anna.figura259@gmail.com" class="pnav__contact">Get in touch</a>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <header class="phero">
+    <div class="pcontainer">
+      <div class="phero__badge reveal-up">
+        <span class="phero__wordmark">SHIFT</span>
+        Mobile App · Digital Wellbeing · 2025
+      </div>
+      <h1 class="phero__title">
+        <span class="reveal-word">Shift</span>
+        <span class="phero__title-sub reveal-word delay-1">Focus on life, save your time</span>
+      </h1>
+      <p class="phero__lead reveal-up delay-2">A digital-wellbeing app with a twist of hardware: you shift your phone into a distraction-free mode by physically tapping it against the Shift device. One deliberate gesture replaces the willpower battle — blocked apps stay blocked, and every saved minute is counted, celebrated, and shareable.</p>
+
+      <ul class="phero__facts reveal-up delay-3">
+        <li><span>Role</span>Product Designer — app & landing page</li>
+        <li><span>Client</span>NOBRAINROT</li>
+        <li><span>Platform</span>iOS app · NFC hardware companion</li>
+        <li><span>Scope</span>Onboarding · Core flows · Stats · Sharing</li>
+      </ul>
+    </div>
+  </header>
+
+  <!-- Cover visual -->
+  <section class="pcover reveal-up">
+    <div class="pcontainer">
+      <img src="assets/shift-cover.png" alt="Shift landing hero — Focus on life, save your time. Make your phone not an addiction mechanism, but a tool" class="pcover__img" />
+    </div>
+  </section>
+
+  <!-- Body -->
+  <main class="pbody">
+    <div class="pcontainer pcontainer--narrow">
+
+      <section class="psection reveal-up">
+        <span class="plabel">01 — Overview</span>
+        <h2>Make your phone a tool, not an addiction mechanism</h2>
+        <p><strong>Shift</strong>, by NOBRAINROT, is a focus system in two parts: a physical NFC device and an iOS app. Tap or hold your phone against the Shift and it "shifts" — the apps you've marked as distractions lock, a timer starts, and the screen goes calm. Tap again to unshift. In between, the app tracks every minute of reclaimed attention as progress toward a daily goal.</p>
+        <p>I designed the complete product experience: onboarding and device activation, the main shift flow, the mode system, statistics and social sharing, and the marketing landing page that sells the device.</p>
+      </section>
+
+      <section class="psection reveal-up">
+        <span class="plabel">02 — The Problem</span>
+        <h2>Software blockers lose to a swipe</h2>
+        <p>Everyone with a screen-time problem has tried an app blocker — and everyone knows the ritual of disabling it eight seconds later. Pure-software solutions fail because the escape hatch lives on the same glowing rectangle as the temptation. The cost of giving up is one tap, made in the exact moment your willpower is weakest.</p>
+        <p>Shift's answer is to move the off-switch into the physical world. Unshifting means physically reaching for the device — a small, deliberate action that breaks the autopilot loop. The design brief followed from that: make shifting feel <strong>rewarding and effortless</strong>, make unshifting feel <strong>conscious</strong>, and never shame the user for either.</p>
+      </section>
+
+      <section class="psection reveal-up">
+        <span class="plabel">03 — Onboarding</span>
+        <h2>Three steps from box to first focus session</h2>
+        <p>Onboarding compresses a hardware pairing, an iOS Screen Time permission, and a new mental model into one linear flow: <strong>customize your mode → scan your device → focus on life</strong>. The Screen Time request is framed honestly on Apple's own dialog, with a plain-language promise underneath — your data is protected by Apple and stays 100% on your phone. Activation reuses the radial spiral motif: the ring ignites in the brand gradient the moment the NFC handshake succeeds, so success needs no caption.</p>
+        <figure class="pfigure">
+          <img src="assets/shift-onboarding.png" alt="Shift onboarding — welcome, three explainer steps, Screen Time permission, NFC device activation and the activated state" />
+          <figcaption>Onboarding — welcome, 3-step explainer, Screen Time consent, NFC activation, and the lit-up "Activated!" moment</figcaption>
+        </figure>
+      </section>
+
+      <section class="psection reveal-up">
+        <span class="plabel">04 — Core Experience</span>
+        <h2>Two states, two moods — by design</h2>
+        <p>The home screen greets you ("Good morning."), shows the selected mode and daily goal, and puts one instruction center-stage: <strong>TAP OR HOLD TO SHIFT</strong>. The spiral around the logo doubles as the daily-goal progress ring, filling with the gradient as you accumulate focused time.</p>
+        <p>Shifted, the app inverts to white and empties out: a monochrome timer, the mode name, and "TAP TO UNSHIFT." Nothing animates, nothing glows, nothing rewards looking at it — the calmest screen in the app is the one you see while you're supposed to be living your life.</p>
+        <div class="pwires">
+          <figure class="pwire">
+            <img src="assets/shift-home.png" alt="Shift home screen — Good morning greeting, tap or hold to shift, spiral progress ring, selected Workout mode and daily goal" />
+            <figcaption>Home — one action, one mode, one goal; the spiral is the progress ring</figcaption>
+          </figure>
+          <figure class="pwire">
+            <img src="assets/shift-shifted.png" alt="Shifted state — inverted white screen with a monochrome timer and tap to unshift" />
+            <figcaption>Shifted — inverted, monochrome, stimulation-free; a screen designed to be left alone</figcaption>
+          </figure>
+          <figure class="pwire">
+            <img src="assets/shift-modes.png" alt="Shift Modes list — Workout, Work, Reading and Birdwatching, each with total time shifted and blocked app counts" />
+            <figcaption>Modes — Workout, Work, Reading… each mode carries its lifetime of saved time</figcaption>
+          </figure>
+        </div>
+      </section>
+
+      <section class="psection reveal-up">
+        <span class="plabel">05 — Modes, Stats & Sharing</span>
+        <h2>Progress you can feel — and post</h2>
+        <p>Modes are blocklists with personality: name one, choose <strong>allow-selected or block-selected</strong>, pick the apps and categories that count as distractions for that context, and save. Each mode accumulates its own total ("Work — 160 days 4 hours saved"), turning an abstract habit into a scoreboard.</p>
+        <p>The Stats tab shows today's ring against the daily goal, a streak counter, and a month of daily spirals — denser spiral, deeper focus. The share card turns a good day into social proof: a meditating figure on the gradient "S," today's shifted time, and the lifetime total, exported straight to TikTok, Stories, or WhatsApp. Growth loop and reward system in one screen.</p>
+        <div class="pwires">
+          <figure class="pwire">
+            <img src="assets/shift-create.png" alt="Create New Mode — name field, allow or block selected toggle, distraction picker and gradient Create button" />
+            <figcaption>Create a mode — name it, choose allow/block logic, select the distractions</figcaption>
+          </figure>
+          <figure class="pwire">
+            <img src="assets/shift-stats.png" alt="Statistics — daily goal 1h 20m, today's progress ring at 37%, and a May 2025 history grid of daily spirals" />
+            <figcaption>Stats — goal, streak and a month of daily rings; hit days glow in the gradient</figcaption>
+          </figure>
+          <figure class="pwire">
+            <img src="assets/shift-share.png" alt="Share sheet — I am Shift card with meditating figure, 2h 20m shifted today, lifetime total, and TikTok, Stories and WhatsApp targets" />
+            <figcaption>Share — "I am SHIFT": today's 2h 20m and the 13-day lifetime total, one tap from social</figcaption>
+          </figure>
+        </div>
+      </section>
+
+      <section class="psection reveal-up">
+        <span class="plabel">06 — Design Decisions</span>
+        <h2>Accessibility and honesty, built into the pixels</h2>
+        <ul class="plist">
+          <li><strong>Contrast first</strong> — near-white text on near-black surfaces puts primary content far beyond WCAG AA; the inverted shifted screen keeps the same ratios in reverse, so both states read in sunlight and at arm's length.</li>
+          <li><strong>Color is never the only signal</strong> — progress is shown by spiral density, a percentage, and a time numeral together; the gradient is reinforcement, not information. Disabled states (a spent "Unshift Now") change fill, outline, and label weight — visible to color-blind users.</li>
+          <li><strong>One accent, one meaning</strong> — the blue-to-pink gradient is reserved exclusively for interactive elements: mode pill, Create, Save, Unshift Now. If it glows, you can tap it; everything static stays monochrome.</li>
+          <li><strong>Generous touch targets</strong> — full-width pill buttons and an entire spiral ring as the shift trigger; the core action works without precision, mid-workout, with wet hands.</li>
+          <li><strong>Low-stimulation lock screen</strong> — the shifted state strips color, motion, and reward loops so the screen itself stops competing for attention. The calm is the feature.</li>
+          <li><strong>Native iOS patterns</strong> — Apple's own Screen Time dialog, share sheet, and wheel time-picker are used untouched, so consent, sharing, and goal-setting feel familiar and trustworthy from first use.</li>
+          <li><strong>An honest escape hatch</strong> — Emergency Unshift exists, but it's budgeted (5 per period, counted down in plain sight). Friction with dignity: the app never traps you, it just makes giving up a decision instead of a reflex.</li>
+          <li><strong>Privacy as copy, not fine print</strong> — "protected by Apple, stays 100% on your phone" sits directly under the permission ask, in body text, before the user commits.</li>
+        </ul>
+        <figure class="pfigure pfigure--phone">
+          <img src="assets/shift-emergency.png" alt="Settings sheet — questions and about sections, Emergency Unshift with 5 remaining and a gradient Unshift Now button" />
+          <figcaption>Emergency Unshift — a visible budget of escapes; the button greys out when they're spent</figcaption>
+        </figure>
+      </section>
+
+      <section class="psection reveal-up">
+        <span class="plabel">07 — Outcome</span>
+        <h2>A ritual, not another blocker</h2>
+        <p>Shift turns focus into a physical gesture with a visible payoff: modes that remember every saved hour, a daily ring worth closing, and a share card that makes discipline something to show off. The design's job was to stay out of the way at the moment of focus and show up warmly at the moment of progress — and every screen was built around that split.</p>
+        <div class="pstats">
+          <div class="pstat"><strong>2 states</strong><span>a rich dark home for choosing focus, and a stripped white screen for keeping it</span></div>
+          <div class="pstat"><strong>5</strong><span>emergency unshifts per period — an escape hatch with a visible budget</span></div>
+          <div class="pstat"><strong>100%</strong><span>of Screen Time data stays on device, stated in plain language at the permission ask</span></div>
+        </div>
+      </section>
+
+      <!-- Footer nav -->
+      <div class="pfooter-nav reveal-up">
+        <a href="index.html" class="pfooter-nav__back">
+          <svg width="18" height="18" viewBox="0 0 16 16" fill="none"><path d="M13 8H3M7 4L3 8l4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          Back to home
+        </a>
+        <a href="mailto:anna.figura259@gmail.com" class="pfooter-nav__cta">Let's work together →</a>
+      </div>
+
+    </div>
+  </main>
+
+  <script>
+    const io = new IntersectionObserver((entries) => {
+      entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('visible'); io.unobserve(e.target); } });
+    }, { threshold: 0.12, rootMargin: '0px 0px -40px 0px' });
+    document.querySelectorAll('.reveal-up, .reveal-word').forEach(el => {
+      if (el.closest('.phero')) { el.classList.add('visible'); } else { io.observe(el); }
+    });
+
+    window.addEventListener('scroll', () => {
+      document.getElementById('pnav').classList.toggle('scrolled', window.scrollY > 20);
+    }, { passive: true });
+  </script>
+</body>
+</html>

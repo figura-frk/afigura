@@ -1,0 +1,122 @@
+/* ─── Shift theme — near-black with the blue→pink gradient accent ──── */
+:root {
+  --p-bg: #0b0b0e;
+  --p-surface: #141419;
+  --p-text: #f4f4f6;
+  --p-muted: #9b9ba6;
+  --p-dim: #5b5b66;
+  --p-green-deep: #1c1c24;
+  --p-green: #2e9bff;             /* gradient start, used as accent */
+  --p-orange: #ff2ec4;            /* gradient end */
+  --p-border: rgba(255, 255, 255, 0.1);
+  --font: 'Poppins', sans-serif;
+
+  --sh-grad: linear-gradient(90deg, #2e9bff, #ff2ec4);
+}
+
+body {
+  background:
+    radial-gradient(ellipse 70% 45% at 85% 0%, rgba(46, 155, 255, 0.09), transparent 60%),
+    radial-gradient(ellipse 55% 40% at 5% 30%, rgba(255, 46, 196, 0.07), transparent 60%),
+    var(--p-bg);
+}
+
+.pnav.scrolled { background: rgba(11, 11, 14, 0.85); }
+.pnav__contact { color: var(--p-text); }
+.pnav__contact:hover { background: #fff; border-color: #fff; color: #0b0b0e; }
+
+.phero__wordmark {
+  font-family: var(--font);
+  font-size: 14px;
+  font-weight: 800;
+  letter-spacing: 0.14em;
+  color: #fff;
+  background: #17171d;
+  border: 1px solid transparent;
+  border-radius: 100px;
+  padding: 7px 16px;
+  background-image: linear-gradient(#17171d, #17171d), var(--sh-grad);
+  background-origin: border-box;
+  background-clip: padding-box, border-box;
+}
+
+.phero__title-sub {
+  background: var(--sh-grad);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.plabel {
+  background: var(--sh-grad);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.pstat { background: var(--p-surface); }
+.pstat strong {
+  background: var(--sh-grad);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+blockquote { background: var(--p-surface); border-left-color: #2e9bff; }
+
+/* case study figures */
+.pfigure { margin: 32px 0 8px; }
+.pfigure img {
+  display: block;
+  width: 100%;
+  border-radius: 14px;
+  border: 1px solid var(--p-border);
+}
+.pfigure figcaption {
+  font-family: var(--font-mono);
+  font-size: 11px;
+  letter-spacing: 0.04em;
+  line-height: 1.6;
+  color: var(--p-dim);
+  margin-top: 12px;
+  text-align: center;
+}
+.pfigure--phone img { max-width: 340px; margin: 0 auto; }
+
+/* phone mockup grid (screens have their own device chrome) */
+.pwires img { background: #0b0b0e; }
+
+/* feature list */
+.plist {
+  list-style: none;
+  padding: 0;
+  margin: 20px 0 28px;
+  display: flex;
+  flex-direction: column;
+}
+.plist li {
+  position: relative;
+  padding: 14px 0 14px 30px;
+  color: var(--p-muted);
+  border-bottom: 1px solid var(--p-border);
+  line-height: 1.65;
+}
+.plist li:first-child { border-top: 1px solid var(--p-border); }
+.plist li::before {
+  content: '';
+  position: absolute;
+  left: 4px;
+  top: 26px;
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  background: var(--sh-grad);
+}
+.plist strong { color: var(--p-text); font-weight: 600; }
+
+/* footer CTA in brand gradient */
+.pfooter-nav__cta {
+  background: var(--sh-grad);
+  color: #fff;
+}
+.pfooter-nav__cta:hover { background: var(--sh-grad); filter: brightness(1.15); }

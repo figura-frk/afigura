@@ -47,7 +47,11 @@
       "Bash(curl -sL -o usnews-old.png \"https://www.figma.com/api/mcp/asset/01f763d1-bfeb-4b35-8f45-795d52289859.png\")",
       "Bash(sips -c 900 1424 --cropOffset 1 0 usnews-directory.png --out usnews-tile.png)",
       "Bash(sips -g pixelWidth -g pixelHeight usnews-tile.png)",
-      "Bash(python3 -)"
+      "Bash(python3 -)",
+      "Bash(curl -sL -o shift-full.png \"https://www.figma.com/api/mcp/asset/aab9d904-7858-4eec-b454-e030e208c8ac.png\")",
+      "Bash(sips -g pixelWidth -g pixelHeight shift-full.png)",
+      "Bash(sips -c 700 700 --cropOffset 260 380 shift-full.png --out /Users/annafigura/Desktop/Art/afigura.com/assets/shift-logo.png)",
+      "Bash(sips --resampleWidth 280 /Users/annafigura/Desktop/Art/afigura.com/assets/shift-logo.png)"
     ]
   }
 }
